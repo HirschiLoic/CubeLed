@@ -57,8 +57,9 @@ def SETUP():
     except:
         print("Erreur lors de l'initialisation des GPIO")
 
-#Creer une fonction,
-#transforme en binaire le layer et attribut "high" la ou il y'a un 1 
+#Fonction qui transforme le layer actuel en binaire (Format 000).
+#Met les 3 pin AA BB et CC à HIGH ou à LOW grâce au &.
+#Si le layer actuel est supérieur à 0, on met à HIGH (1)
 def OUTPUT(binlayer):
     if binlayer & 1 > 0:
         print("True 1")

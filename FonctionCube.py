@@ -119,7 +119,7 @@ def Affiche32(choixlayer):
     #finally:
         #GPIO.cleanup()
     #GPIO.cleanup()
-
+#Fonction qui définis les couleurs de départ du cube
 def CouleurDepart():
     maLed(7, 0, 0, 146, 0, 223)
     maLed(7, 1, 0, 0, 0, 255)
@@ -130,7 +130,7 @@ def CouleurDepart():
     maLed(7, 6, 0, 255, 0, 0)
     maLed(7, 7, 0, 240, 130, 240)
 
-
+#Fonction qui éteind entiéremment le cube
 def EteindreCube():
      #Numero du layer (0 a 7)
     L = 0
@@ -143,7 +143,7 @@ def EteindreCube():
     #Cb = 1  # Bleu
     #Cv = 2  # Vert
 
-     #Parcours les LEDs et les eteinds
+    #Parcours les LEDs et les eteinds
     for L in range(0, 8, 1):
         for Y in range(0, 8, 1):
             for X in range(0, 8, 1):
